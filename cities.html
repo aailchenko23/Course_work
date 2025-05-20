@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Адаптація сторінки під мобільні пристрої -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Travel - home page</title>
+    <!-- Підключення основного CSS-файлу -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="icon" href="/images/column.ico" type="image/x-icon" />
+
+    <!-- ===============FONTS=============== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =================================== -->
+  </head>
+  <body>
+    <header>
+      <header>
+      <div class="wrapper">
+        <div class="left_block">
+          <a href="/index.html" class="logo header_item">
+            <img src="/images/column.png" alt="Логотип" />
+          </a>
+          <a href="/index.html" class="header_link header_item">ГОЛОВНА</a>
+        </div>
+<!-- Кнопка-бургер для мобільного меню -->
+        <div class="burger" id="burger">☰</div>
+        <div class="right_block" id="menu">
+          <a href="#" class="header_link header_item" data-city="lviv">ЛЬВІВ</a>
+          <a href="#" class="header_link header_item" data-city="kyiv">КИЇВ</a>
+          <a href="#" class="header_link header_item" data-city="odesa">ОДЕСА</a>
+          <a href="#" class="header_link header_item" data-city="kherson">ХЕРСОН</a>
+          <a href="#" class="header_link header_item" data-city="kharkiv">ХАРКІВ</a>
+          <a href="#" class="header_link header_item" data-city="zaporizhzhia">ЗАПОРІЖЖЯ</a>
+          <a href="#" class="header_link header_item" data-city="ivano">ІВАНО-ФРАНКІВСЬК</a>
+          <a href="#" class="header_link header_item" data-city="chernivtsi">ЧЕРНІВЦІ</a>
+          <a href="#" class="header_link header_item" data-city="uzhhorod">УЖГОРОД</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main_section">
+        <div class="wrapper_main">
+          <h1 class="block_item" id="city_name">Місто</h1>
+          <p class="block_item city_description" id="city_description">Опис міста</p>
+          
+        </div>
+      </section>
+    </main>
+<!-- Футер сайту -->
+    <footer>
+      <div class="footer"><a href="/index.html">Online Travel</a></div>
+    </footer>
+    <!-- Підключення JavaScript-файлів -->
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/entity.js"></script>
+  </body>
+</html>

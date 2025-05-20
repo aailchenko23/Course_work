@@ -1,0 +1,51 @@
+body {
+  background-image: url(/images/wheat.jpg);
+}
+
+.main_section {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper_main {
+  max-width: 780px;
+  margin: 20px;
+}
+
+.wrapper_main h1 {
+  margin-bottom: 20px;
+}
+
+.start_btn a {
+  display: inline-block;
+  color: var(--secondary);
+  font-family: var(--main-font);
+  margin-top: 20px;
+  max-width: 300px;
+  padding: 20px 40px;
+  border: solid #fff 3px;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease; /* <-- Ось тут! */
+}
+
+.start_btn a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  transform: scale(1.05);
+}
+
+.start_btn a:active {
+  transform: scale(0.97);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero_title {
+  font-family: var(--main-font);
+}

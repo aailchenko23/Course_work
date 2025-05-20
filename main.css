@@ -1,0 +1,77 @@
+@import url(/styles/reset.css);
+@import url(/styles/burger_menu.css);
+@import url(/styles/main_block.css);
+@import url(/styles/footer.css);
+@import url(/styles/lviv_style/lviv_page.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+:root {
+  --main: #000000;
+  --secondary: #fff;
+  --main-font: "Montserrat", sans-serif;
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+section {
+  color: var(--secondary);
+}
+
+a {
+  font-family: var(--main-font);
+  font-weight: var(--semi-bold);
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-weight: var(--bold);
+  font-size: 36px;
+}
+
+p {
+  font-family: var(--main-font);
+  font-weight: var(--regular);
+  font-size: 24px;
+}
+
+.wrapper_main h1 {
+  font-family: "Marck Script", cursive;
+  font-size: 50px;
+}
+
+.wrapper_main .hero_title {
+  font-family: var(--main-font);
+}
+
+.header_link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.header_link:hover {
+  color: #686868;
+}
+
+@media (max-width: 1000px) {
+  .city_description {
+    font-size: 18px;
+  }
+}
+
+/* Ще дрібніше — наприклад, для мобільних */
+@media (max-width: 600px) {
+  .city_description {
+    font-size: 16px;
+  }
+}
